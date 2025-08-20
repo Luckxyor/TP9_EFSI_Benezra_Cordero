@@ -1,0 +1,32 @@
+.hourly.panel {
+  background: linear-gradient(180deg, color-mix(in oklab, var(--panel) 96%, black 4%), color-mix(in oklab, var(--panel) 90%, black 10%));
+  border: 1px solid color-mix(in oklab, var(--panel) 80%, white 20%);
+  border-radius: 18px;
+  padding: 16px;
+}
+.hourly-header { font-weight: 800; margin-bottom: 10px; }
+
+.hourly-scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(90px, 1fr);
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.hourly-scroller::-webkit-scrollbar { height: 8px; }
+.hourly-scroller::-webkit-scrollbar-thumb { background: color-mix(in oklab, var(--panel) 80%, white 20%); border-radius: 999px; }
+
+.hourly-cell {
+  background: color-mix(in oklab, var(--panel) 92%, black 8%);
+  border: 1px solid color-mix(in oklab, var(--panel) 85%, white 15%);
+  border-radius: 14px;
+  padding: 10px;
+  text-align: center;
+}
+.hourly-time { color: var(--muted); font-size: 12px; }
+.hourly-icon { width: 40px; height: 40px; }
+.hourly-temp { font-weight: 800; margin-top: 4px; }
+.hourly-pop { color: var(--muted); font-size: 12px; }
+
+

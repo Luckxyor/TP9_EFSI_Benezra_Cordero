@@ -1,0 +1,26 @@
+.unitToggle {
+  display: inline-flex;
+  background: color-mix(in oklab, var(--panel) 92%, black 8%);
+  border: 1px solid color-mix(in oklab, var(--panel) 85%, white 15%);
+  border-radius: 999px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.unitToggle-segment {
+  display: flex;
+  align-items: center;
+  min-width: 44px;
+  height: 36px;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-weight: 700;
+}
+.unitToggle-segment.is-active {
+  background: var(--accent);
+  color: #0b1020;
+}
+
+
