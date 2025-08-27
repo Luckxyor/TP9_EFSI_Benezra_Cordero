@@ -29,7 +29,11 @@ export default function HourlyForecast() {
           return (
             <div key={item.dt} className="hourly-cell">
               <div className="hourly-time">{label}</div>
-              <img className="hourly-icon" src={`https://openweathermap.org/img/wn/${icon}.png`} alt="" />
+              <img
+                className="hourly-icon"
+                src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
+                alt={item.weather?.[0]?.description || 'icono'}
+              />
               <div className="hourly-temp">{temp}{temperatureSymbol}</div>
               <div className="hourly-pop" title="Prob. precipitación">{pop}%</div>
             </div>

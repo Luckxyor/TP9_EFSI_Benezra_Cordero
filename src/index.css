@@ -9,7 +9,7 @@
 }
 
 :root {
-  --bg: #0f172a;
+  --bg: linear-gradient(135deg, #050608 0%, #1c2f4d 70%);
   --panel: #111827;
   --text: #e5e7eb;
   --muted: #9ca3af;
@@ -17,7 +17,7 @@
 }
 
 [data-theme="light"] {
-  --bg: #f3f4f6;
+  --bg: linear-gradient(135deg, #a0d8f7 0%, #ffffff 70%);;
   --panel: #ffffff;
   --text: #111827;
   --muted: #6b7280;
@@ -41,6 +41,15 @@ body {
   color: var(--text);
   display: flex;
   align-items: stretch;
+}
+
+/* Improve visibility of OpenWeather icons on dark theme */
+[data-theme="dark"] .hourly-icon,
+[data-theme="dark"] .forecast-icon,
+[data-theme="dark"] .current-icon {
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 4px;
 }
 
 h1 {
