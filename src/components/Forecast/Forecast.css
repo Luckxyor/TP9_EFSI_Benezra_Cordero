@@ -1,15 +1,7 @@
-.forecast { }
-
 .forecast-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 12px;
-}
-@media (min-width: 640px) {
-  .forecast-grid { grid-template-columns: repeat(3, 1fr); }
-}
-@media (min-width: 900px) {
-  .forecast-grid { grid-template-columns: repeat(5, 1fr); }
 }
 .forecast-card {
   background: linear-gradient(180deg, color-mix(in oklab, var(--panel) 96%, black 4%), color-mix(in oklab, var(--panel) 90%, black 10%));

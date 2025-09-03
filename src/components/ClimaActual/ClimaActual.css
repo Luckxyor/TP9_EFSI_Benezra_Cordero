@@ -10,8 +10,15 @@
   justify-content: space-between;
   gap: 12px;
 }
-.clima-actual-ubicacion { font-size: 20px; font-weight: 700; }
-.clima-actual-descripcion { color: var(--muted); text-transform: capitalize; }
+.clima-actual-ubicacion { 
+  font-size: 20px; 
+  font-weight: 700; 
+}
+
+.clima-actual-descripcion { 
+  color: var(--muted); 
+  text-transform: capitalize; 
+}
 
 .clima-actual-cuerpo {
   display: grid;
@@ -19,22 +26,29 @@
   grid-template-columns: 1fr;
   margin-top: 10px;
 }
-@media (min-width: 700px) {
-  .clima-actual-cuerpo { grid-template-columns: 1fr 1fr; align-items: center; }
-}
+
 .clima-actual-bloqueTemperatura {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.clima-actual-icono { width: 90px; height: 90px; }
-.clima-actual-temperatura { font-size: 64px; font-weight: 800; line-height: 1; }
+.clima-actual-icono { 
+  width: 90px; 
+  height: 90px; 
+}
+
+.clima-actual-temperatura { 
+  font-size: 64px; 
+  font-weight: 800; 
+  line-height: 1; 
+}
 
 .clima-actual-estadisticas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+
 .estadistica {
   background: color-mix(in oklab, var(--panel) 92%, black 8%);
   border: 1px solid color-mix(in oklab, var(--panel) 85%, white 15%);
@@ -44,7 +58,12 @@
   gap: 6px;
   text-align: center;
 }
-.estadistica span { color: var(--muted); font-size: 12px; }
-.estadistica strong { font-size: 18px; }
 
+.estadistica span { 
+  color: var(--muted); 
+  font-size: 12px; 
+}
 
+.estadistica strong { 
+  font-size: 18px; 
+}
