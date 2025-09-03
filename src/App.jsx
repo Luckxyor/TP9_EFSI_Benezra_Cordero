@@ -3,7 +3,7 @@ import SearchBar from './components/SearchBar/SearchBar'
 import UnitToggle from './components/UnitToggle/UnitToggle'
 import ThemeToggle from './components/ThemeToggle/ThemeToggle'
 import CurrentWeather from './components/ClimaActual'
-import Forecast from './components/Forecast/Forecast'
+import Pronostico from './components/Pronostico'
 import HourlyForecast from './components/HourlyForecast/HourlyForecast'
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <HourlyForecast />
         </section>
         <section>
-          <Forecast />
+          <Pronostico />
         </section>
       </main>
       <footer className="app-footer">

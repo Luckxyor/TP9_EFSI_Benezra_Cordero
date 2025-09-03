@@ -1,0 +1,38 @@
+.pronostico-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.pronostico-card {
+  background: linear-gradient(180deg, var(--panel), rgba(0, 0, 0, 0.1));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 12px;
+  text-align: center;
+}
+
+.pronostico-day { 
+  color: var(--muted); 
+  margin-bottom: 6px; 
+  font-weight: 700; 
+}
+
+.pronostico-icon { 
+  width: 48px; 
+  height: 48px; 
+}
+
+.pronostico-temps { 
+  display: flex; 
+  gap: 8px; 
+  justify-content: center; 
+  font-weight: 700; 
+}
+
+.temp-baja { 
+  color: var(--muted); 
+  font-weight: 600; 
+}
+
+

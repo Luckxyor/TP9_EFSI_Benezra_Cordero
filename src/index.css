@@ -45,7 +45,7 @@ body {
 
 /* Improve visibility of OpenWeather icons on dark theme */
 [data-theme="dark"] .hourly-icon,
-[data-theme="dark"] .forecast-icon,
+[data-theme="dark"] .pronostico-icon,
 [data-theme="dark"] .current-icon {
   background: #ffffff;
   border-radius: 999px;
