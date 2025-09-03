@@ -2,7 +2,7 @@ import './App.css'
 import SearchBar from './components/SearchBar/SearchBar'
 import UnitToggle from './components/UnitToggle/UnitToggle'
 import ThemeToggle from './components/ThemeToggle/ThemeToggle'
-import CurrentWeather from './components/CurrentWeather/CurrentWeather'
+import CurrentWeather from './components/ClimaActual'
 import Forecast from './components/Forecast/Forecast'
 import HourlyForecast from './components/HourlyForecast/HourlyForecast'
 
@@ -26,7 +26,7 @@ function App() {
         </section>
       </main>
       <footer className="app-footer">
-        <span>Weather App • OpenWeather</span>
+        <span>Clima Granate</span>
       </footer>
     </div>
   )
